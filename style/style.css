@@ -1,0 +1,31 @@
+/* * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', cursive sans-serif;
+} */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* background-color: #000000; */
+}
+
+/* .container {
+    width: 300px;
+    height: 555px;
+    border-radius: 15px;
+    /* background-color: #000000; */
+    box-shadow: 5px 5px 10px #222, -5px -5px 10px #222;
+} */
+.icon1 {
+    width: 300px;
+
+}
+
+.icon1 {
+    width: 300px;
+
+}
