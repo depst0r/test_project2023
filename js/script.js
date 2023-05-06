@@ -25,35 +25,46 @@ window.addEventListener("DOMContentLoaded", function () {
   //buttons
   const btns = document.querySelectorAll("i");
   const search = document.querySelector("input");
+  const cross = document.querySelector(".fa-times");
 
-  btns.forEach((btn) => {
-    btn.addEventListener("click", (e) => {
-      switch (e.target.className) {
-        case "fa fa-bus":
-          search.value = "BUS";
-          break;
-        case "fa fa-taxi":
-          search.value = "TAXI";
-          break;
-        case "fa fa-train":
-          search.value = "TRAIN";
-          break;
-        case "fa fa-plane":
-          search.value = "PLANE";
-          break;
-        case "fa fa-amazon":
-          search.value = "AMAZON";
-          break;
-        case "fa fa-twitter":
-          search.value = "TWITTER";
-          break;
-        case "fa fa-facebook":
-          search.value = "FACEBOOK";
-          break;
-      }
+  function clearSearch(btn) {
+    btn.addEventListener("click", () => {
+      search.value = "";
     });
-  });
+  }
 
+  function seacrhValue(value) {
+    value.forEach((btn, i) => {
+      btn.addEventListener("click", (e) => {
+        switch (e.target.className) {
+          case "fa fa-bus":
+            search.value = "BUS";
+            break;
+          case "fa fa-taxi":
+            search.value = "TAXI";
+            break;
+          case "fa fa-train":
+            search.value = "TRAIN";
+            break;
+          case "fa fa-plane":
+            search.value = "PLANE";
+            break;
+          case "fa fa-amazon":
+            search.value = "AMAZON";
+            break;
+          case "fa fa-twitter":
+            search.value = "TWITTER";
+            break;
+          case "fa fa-facebook":
+            search.value = "FACEBOOK";
+            break;
+        }
+      });
+    });
+  }
+
+  clearSearch(cross);
+  seacrhValue(btns);
   clockStart();
   updateClock();
 });

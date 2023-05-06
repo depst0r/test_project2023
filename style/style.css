@@ -114,9 +114,11 @@ input[type='text']{
                 font-size: 12px;
                 margin-top: 10px;
 }
-.fa-microphone{
-    width: 20px;
+.fa-times{
+    width: 10px;
     color: #fff;
+    cursor: pointer
+    
 }
 .pagination{
     display: inline-block;
@@ -136,6 +138,11 @@ input[type='text']{
     box-shadow: 5px 5px 10px #222,
                 -5px -5px 10px #222;
                 border-radius: 50%;
+}
+
+.active {
+    color: crimson;
+    border-radius: 10px;
 }
 .timer {
     cursor: default;
