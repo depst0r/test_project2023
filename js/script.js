@@ -36,7 +36,6 @@ window.addEventListener("DOMContentLoaded", function () {
   function seacrhValue(value) {
     value.forEach((btn) => {
       btn.addEventListener("click", (e) => {
-        console.log(e.target.className);
         switch (e.target.className) {
           case "fa fa-bus":
             search.value = "BUS";

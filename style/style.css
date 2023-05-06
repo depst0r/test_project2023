@@ -113,6 +113,9 @@ input[type='text']{
                 padding: 10px 15px;
                 font-size: 12px;
                 margin-top: 10px;
+    text-align: center;
+    font-size: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .fa-times{
     width: 10px;
