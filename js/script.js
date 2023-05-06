@@ -5,7 +5,7 @@ window.addEventListener("DOMContentLoaded", function () {
 
   const updateClock = () => {
     const time = new Date();
-    const hours = time.getHours();
+    const hours = addZero(time.getHours());
     const minutes = addZero(time.getMinutes());
     clock.textContent = `${hours}:${minutes}`;
   };
@@ -22,11 +22,38 @@ window.addEventListener("DOMContentLoaded", function () {
     setInterval(updateClock, 1000);
   };
 
+  //buttons
+  const btns = document.querySelectorAll("i");
+  const search = document.querySelector("input");
+
+  btns.forEach((btn) => {
+    btn.addEventListener("click", (e) => {
+      switch (e.target.className) {
+        case "fa fa-bus":
+          search.value = "BUS";
+          break;
+        case "fa fa-taxi":
+          search.value = "TAXI";
+          break;
+        case "fa fa-train":
+          search.value = "TRAIN";
+          break;
+        case "fa fa-plane":
+          search.value = "PLANE";
+          break;
+        case "fa fa-amazon":
+          search.value = "AMAZON";
+          break;
+        case "fa fa-twitter":
+          search.value = "TWITTER";
+          break;
+        case "fa fa-facebook":
+          search.value = "FACEBOOK";
+          break;
+      }
+    });
+  });
+
   clockStart();
   updateClock();
-
-  //burger menu
-
-  // const menu = document.querySelector(".fa-bars");
-  // const cross = document.querySelector(".fa-times");
 });
