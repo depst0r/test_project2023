@@ -3,7 +3,6 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    /* background-color: #000000; */
 }
 
 .container {
@@ -14,18 +13,62 @@ body {
     background-color: #85c6eb;
     box-shadow: 5px 5px 10px #222, -5px -5px 10px #222;
 }
+
 .icon1 {
     width: 300px;
 
 }
 
-.container
 .icon1
 {
     color: white;
+    height: 25px;
+    border-radius: 15px;
+    padding: 7px;
+    padding-right: 5px;
 }
 
-.icon1 {
+.icon2 {
     width: 300px;
-    
+    height: 30px;
+    /* background-color: #000000; */
+    padding: 7px;
+}
+
+.fa-bars {
+    margin-left: 10px;
+    color:#fff;
+    font-size: 12px;
+}
+
+.fa-ellipsis-v{
+    margin-right: 15px;
+    font-size: 12px;
+}
+span{
+    margin: 5px;
+    font-size: 12px;
+    color: #fff;
+}
+.icon3{
+    width: 300px;
+    height: 110px;
+    /* background-color: #000000; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .fa-battery-three-quarters, .fa-signal, .fa-wifi, .fa-ellipsis-v{
+    float: right;
+    color: #fff;
+    padding-right: 10px;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
 }
