@@ -34,7 +34,7 @@ window.addEventListener("DOMContentLoaded", function () {
   }
 
   function seacrhValue(value) {
-    value.forEach((btn, i) => {
+    value.forEach((btn) => {
       btn.addEventListener("click", (e) => {
         switch (e.target.className) {
           case "fa fa-bus":
@@ -62,6 +62,21 @@ window.addEventListener("DOMContentLoaded", function () {
       });
     });
   }
+
+  //Calendar
+
+  const calendar = document.querySelector("#calendar");
+
+  function currenrData(caledarCurrenDate) {
+    const date = new Date();
+    const yaer = date.getFullYear();
+    const month = addZero(date.getMonth() + 1);
+    const day = addZero(date.getDay());
+    const curren = `${yaer}-${month}-${day}`;
+    caledarCurrenDate.value = curren;
+  }
+
+  currenrData(calendar);
 
   clearSearch(cross);
   seacrhValue(btns);
