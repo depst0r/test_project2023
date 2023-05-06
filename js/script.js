@@ -24,7 +24,7 @@ window.addEventListener("DOMContentLoaded", function () {
 
   //buttons
   const btns = document.querySelectorAll("i");
-  const search = document.querySelector("input");
+  const search = document.querySelector("input[data-attribute='search']");
   const cross = document.querySelector(".fa-times");
 
   function clearSearch(btn) {
@@ -36,6 +36,7 @@ window.addEventListener("DOMContentLoaded", function () {
   function seacrhValue(value) {
     value.forEach((btn) => {
       btn.addEventListener("click", (e) => {
+        console.log(e.target.className);
         switch (e.target.className) {
           case "fa fa-bus":
             search.value = "BUS";

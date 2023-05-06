@@ -145,10 +145,12 @@ input[type='text']{
     background-color: rgba(28,28,28,0);
     color: #00ffee;
     text-align: center;
+    font-size: 20px;
 }
 .calendar {
     position: relative;
     text-align: center;
+    
 }
 
 .active {
