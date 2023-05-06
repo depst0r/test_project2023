@@ -58,7 +58,34 @@ span{
     justify-content: center;
     align-items: center;
 }
-
+.icon2 span {
+    margin: 0;
+    /* font-size: 55px; */
+}
+.icon3 span:nth-child(1){
+    color: #176BEF;
+    font-size: 35px;
+}
+span:nth-child(2){
+    color: #FF3E30;
+    font-size: 35px;
+}
+span:nth-child(3){
+    color: #F7B529;
+    font-size: 35px;
+}
+span:nth-child(4){
+    color: #176BEF;
+    font-size: 35px;
+}
+span:nth-child(5){
+    color: #179C52;
+    font-size: 35px;
+}
+span:nth-child(6){
+    color: #FF3E30;
+    font-size: 35px;
+}
 .container .fa-battery-three-quarters, .fa-signal, .fa-wifi, .fa-ellipsis-v{
     float: right;
     color: #fff;
