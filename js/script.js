@@ -82,6 +82,10 @@ window.addEventListener("DOMContentLoaded", function () {
     caledarCurrenDate.value = curren;
   }
 
+  //burger menu
+
+  const menu = document.querySelector(".fa-bars");
+
   currenrData(calendar);
   clearSearch(cross);
   seacrhValue(btns);
