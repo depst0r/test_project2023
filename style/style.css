@@ -140,6 +140,14 @@ input[type='text']{
                 border-radius: 50%;
 }
 
+#calendar {
+    border-radius: 10px;
+}
+.calendar {
+    position: relative;
+    text-align: center;
+}
+
 .active {
     color: crimson;
     border-radius: 10px;

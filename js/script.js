@@ -66,6 +66,12 @@ window.addEventListener("DOMContentLoaded", function () {
   //Calendar
 
   const calendar = document.querySelector("#calendar");
+  const currentDate = document.querySelector(".calendar");
+  const date = document.querySelector(".fa-calendar");
+
+  date.addEventListener("click", () => {
+    currentDate.classList.toggle("hide");
+  });
 
   function currenrData(caledarCurrenDate) {
     const date = new Date();
@@ -77,7 +83,6 @@ window.addEventListener("DOMContentLoaded", function () {
   }
 
   currenrData(calendar);
-
   clearSearch(cross);
   seacrhValue(btns);
   clockStart();
