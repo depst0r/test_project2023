@@ -101,6 +101,45 @@ input[type='text']{
                 font-size: 12px;
                 margin-top: 10px;
 }
+.fa-microphone{
+    width: 20px;
+    color: #fff;
+}
+.pagination{
+    display: inline-block;
+    width: 300px;
+    height: auto;
+    text-align: center;
+}
+.pagination .fa {
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    color: #176BEF;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 10px #222,
+                -5px -5px 10px #222;
+                border-radius: 50%;
+}
+button {
+    margin: 10px;
+    outline: none;
+    border-style: none;
+    background-color: rgba(28,28,28,0)
+}
+p {
+    font-size: 8px;
+    margin-top: 8px;
+    color: #fff;
+}
+#plus {
+    color: #F7B529;
+    font-weight: normal;
+    font-size: 20px;
+}
 .container .fa-battery-three-quarters, .fa-signal, .fa-wifi, .fa-ellipsis-v{
     float: right;
     color: #fff;
