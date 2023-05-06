@@ -86,6 +86,8 @@ window.addEventListener("DOMContentLoaded", function () {
 
   const menu = document.querySelector(".fa-bars");
 
+  menu.addEventListener("click", () => {});
+
   currenrData(calendar);
   clearSearch(cross);
   seacrhValue(btns);
